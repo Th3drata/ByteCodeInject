@@ -1,3 +1,7 @@
+[![CMake](https://img.shields.io/badge/CMake-064F8C.svg?style=default&logo=CMake&logoColor=white)](https://cmake.org/)
+[![C++](https://img.shields.io/badge/C++-A8B9CC.svg?style=default&logo=C%2B%2B&logoColor=black)](https://isocpp.org/)
+[![YAML](https://img.shields.io/badge/YAML-CB171E.svg?style=default&logo=YAML&logoColor=white)](https://yaml.org/)
+
 # ByteCodeInject
 
 A Windows-based process injection tool that demonstrates DLL injection and process manipulation techniques.
@@ -40,7 +44,7 @@ This project requires:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/ByteCodeInject.git
+    git clone https://github.com/Th3drata/ByteCodeInject.git
     ```
 
 2. **Navigate to the project directory:**
@@ -404,7 +408,7 @@ This project requires:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/ByteCodeInject.git
+    git clone https://github.com/Th3drata/ByteCodeInject.git
     ```
 
 2. **Navigate to the project directory:**
