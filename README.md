@@ -1,3 +1,85 @@
+# ByteCodeInject
+
+A Windows-based process injection tool that demonstrates DLL injection and process manipulation techniques.
+
+## Overview
+
+ByteCodeInject is a C++ project that demonstrates process injection techniques on Windows systems. It consists of two main components:
+- An injector that can inject code into running processes
+- A simple backdoor demonstration payload
+
+## Features
+
+- Process injection using shellcode
+- Remote thread creation
+- Process memory manipulation
+- Cross-process communication
+- Windows API integration
+
+## Project Structure
+
+```sh
+└── /
+    ├── backdoor.cpp      # Simple demonstration payload
+    ├── injector.cpp      # Main injection implementation
+    ├── CMakeLists.txt    # Build configuration
+    └── build/           # Build output directory
+```
+
+## Getting Started
+
+### Prerequisites
+
+This project requires:
+- Windows operating system
+- CMake (version 3.29.2 or higher)
+- C++ compiler (MSVC recommended)
+- Administrator privileges (for process injection)
+
+### Installation
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/yourusername/ByteCodeInject.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```sh
+    cd ByteCodeInject
+    ```
+
+3. **Build the project:**
+    ```sh
+    mkdir build
+    cd build
+    cmake ..
+    cmake --build .
+    ```
+
+### Usage
+
+The injector requires two arguments:
+1. Target process name
+2. Path to the executable to inject
+
+Example:
+```sh
+injector.exe notepad.exe path/to/backdoor.exe
+```
+
+### Security Notice
+
+⚠️ **WARNING**: This tool is for educational purposes only. Unauthorized process injection may be illegal in your jurisdiction. Always obtain proper authorization before testing on any system.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Windows API documentation
+- Process injection research community
+
 <div id="top">
 
 <!-- HEADER STYLE: CLASSIC -->
@@ -312,121 +394,55 @@
 
 ### Prerequisites
 
-This project requires the following dependencies:
-
-- **Programming Language:** CMake
-- **Package Manager:** Cmake
+This project requires:
+- Windows operating system
+- CMake (version 3.29.2 or higher)
+- C++ compiler (MSVC recommended)
+- Administrator privileges (for process injection)
 
 ### Installation
 
-Build  from the source and intsall dependencies:
-
 1. **Clone the repository:**
-
     ```sh
-    ❯ git clone ../
+    git clone https://github.com/yourusername/ByteCodeInject.git
     ```
 
 2. **Navigate to the project directory:**
-
     ```sh
-    ❯ cd 
+    cd ByteCodeInject
     ```
 
-3. **Install the dependencies:**
-
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![cmake][cmake-shield]][cmake-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [cmake-shield]: None -->
-	<!-- [cmake-link]: None -->
-
-	**Using [cmake](None):**
-
-	```sh
-	❯ echo 'INSERT-INSTALL-COMMAND-HERE'
-	```
+3. **Build the project:**
+    ```sh
+    mkdir build
+    cd build
+    cmake ..
+    cmake --build .
+    ```
 
 ### Usage
 
-Run the project with:
+The injector requires two arguments:
+1. Target process name
+2. Path to the executable to inject
 
-**Using [cmake](None):**
+Example:
 ```sh
-echo 'INSERT-RUN-COMMAND-HERE'
+injector.exe notepad.exe path/to/backdoor.exe
 ```
 
-### Testing
+### Security Notice
 
- uses the {__test_framework__} test framework. Run the test suite with:
-
-**Using [cmake](None):**
-```sh
-echo 'INSERT-TEST-COMMAND-HERE'
-```
-
----
-
-## Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
-
-## Contributing
-
-- **💬 [Join the Discussions](https://LOCAL///discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://LOCAL///issues)**: Submit bugs found or log feature requests for the `` project.
-- **💡 [Submit Pull Requests](https://LOCAL///blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your LOCAL account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone .
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to LOCAL**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://LOCAL{///}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=/">
-   </a>
-</p>
-</details>
-
----
+⚠️ **WARNING**: This tool is for educational purposes only. Unauthorized process injection may be illegal in your jurisdiction. Always obtain proper authorization before testing on any system.
 
 ## License
 
- is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Credit `contributors`, `inspiration`, `references`, etc.
+- Windows API documentation
+- Process injection research community
 
 <div align="right">
 
